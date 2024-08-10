@@ -1,14 +1,17 @@
 #!/usr/bin/python3
 """ Define a class named square """
 
+
 class Square:
-    """ a class Square that defines a square by: (based on 1-square.py)
+    """ 
+    a class Square that defines a square by: (based on 1-square.py)
 
     Attributs :
         size: size of square that must be an int and > 0
     """
     def __init__(self, size=0):
-        """ creats an instance of a class Square.
+        """
+        creats an instance of a class Square.
         Args:
             size: size of the square
         """
