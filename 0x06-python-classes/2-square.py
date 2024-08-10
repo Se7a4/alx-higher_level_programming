@@ -4,16 +4,17 @@
 
 class Square:
     """ 
-    a class Square that defines a square by: (based on 1-square.py)
+    a class that defines properties of square by: (based on 1-square.py)
 
     Attributs :
-        size: size of square that must be an int and > 0
+        size: size of square(s side).
     """
     def __init__(self, size=0):
         """
         creats an instance of a class Square.
+        
         Args:
-            size: size of the square
+            size: size of the square (1 side).
         """
         self.__size = size
         if not isinstance(self.__size, int):
