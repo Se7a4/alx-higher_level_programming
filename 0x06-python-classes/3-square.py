@@ -6,13 +6,13 @@ class Square:
     class that defines properties of square by: (based on 2-square.py)
     
     Attributes:
-        size : size of a square.
+        size : size of a square (1 side).
     """
     def __init__(self, size=0):
         """creats a new instance of square 
         
         Args :
-            size : size of the square.
+            size : size of the square (1 side).
         """
         self.__size = size 
 
