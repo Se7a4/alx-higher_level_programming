@@ -3,8 +3,13 @@
 
 
 class Square():
-    """ define a class attripute. """
+    """ define a class attripute.
+
+    Args: 
+        size: size of the square
+    """
     __size = None
-    """ opject instantion metho. """
+
+    """ creat new instance of square."""
     def __init__(self , size):
         self.__size = size
