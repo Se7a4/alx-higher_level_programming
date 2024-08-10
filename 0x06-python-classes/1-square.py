@@ -3,7 +3,8 @@
 
 
 class Square():
-    """ define a class attripute. """
+    """ define a class attripute. 
+    """
     __size = None
     def __init__(self , size):
         self.__size = size
