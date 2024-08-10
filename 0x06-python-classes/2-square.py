@@ -2,13 +2,15 @@
 """ Define a class named square """
 
 class Square:
-    """ a class Square that defines a square by: (based on 1-square.py)"""
+    """ a class Square that defines a square by: (based on 1-square.py)
+    Attributs :
+        size: size of square that must be an int and > 0
+    """
 
     def __init__(self, size=0):
         """ Define an instance from a class Square.
-
-        Attributs :
-        size: size of square that must be an int and > 0.
+        Args:
+            size: size of the square
         """
         self.__size = size
         if not isinstance(self.__size, int):
