@@ -13,7 +13,8 @@ class Square:
         """Creats an instance from Square class
 
         Args:
-            size: size of the square.
+            __size(int): size of the square.
+            __position(tuple): position of the square.
         """
         self.__size = size
         self.__position = position
@@ -23,12 +24,6 @@ class Square:
         """Return: returns the size value.
         """
         return self.__size
-
-    @property
-    def position(self):
-        """Return: returns the position value.
-        """
-        return self.position
 
     @size.setter
     def size(self, value):
@@ -48,13 +43,22 @@ class Square:
         else:
             self.__size = value
 
+    @property
+    def position(self):
+        """Return: returns the position of square.
+        """
+        return self.position
+
     @position.setter
     def position(self, value):
         """A setter for the position value
         Args:
             value(tuple): a tuple of 2 positive integers.
+
+        Raises:
+            TypeError: position must be a tuple of 2 positive integers
         """
-        if not isinstance(value, tuple(int)):
+        if not isinstance(value, tuple(+int)):
             raise TypeError("position must be a tuple of 2 positive integers")
         if len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
