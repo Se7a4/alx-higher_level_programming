@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-"""Define a calss named square.
-"""
+"""Define a calss named square."""
+
 
 class Square:
     """Class that defines properties of square by: (based on 3-square.py)
@@ -42,8 +42,8 @@ class Square:
             self.__size = value
 
     def area(self):
-        """Calculates the area of the square
+        """Calculates the area of the square.
 
-        Return: returns the area of a square.
+        Return: returns the current square area.
         """
-        return self.__size**2
+        return self.__size ** 2
