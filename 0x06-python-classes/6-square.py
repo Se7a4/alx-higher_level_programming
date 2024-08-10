@@ -28,7 +28,7 @@ class Square:
     def position(self):
         """Return: returns the position value.
         """
-        return position
+        return self.position
 
     @size.setter
     def size(self, value):
