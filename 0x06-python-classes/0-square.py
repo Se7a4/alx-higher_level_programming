@@ -4,4 +4,5 @@
 
 class Square:
     """ instantiate an opject from class Square """
-    pass
+    def __init__():
+        pass
