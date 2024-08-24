@@ -23,7 +23,7 @@ class Rectangle():
         """Holds the width of a rectangle
         Returns: the width if the rectangle.
         """
-        return "f{self.width}"
+        return "f{width}"
 
     @width.setter
     def width(self, value):
@@ -31,18 +31,18 @@ class Rectangle():
         Args:
             value: the value of the width given.
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
         """Holds the height of a rectangle
         Returns: the height if the rectangle.
         """
-        return "f{self.height}"
+        return "f{self.__height}"
 
     @height.setter
     def height(self, value):
@@ -50,8 +50,8 @@ class Rectangle():
         Args:
             value: the value of the height given.
         """
-        if not isinstance(value, int):
+        if type(value) is not int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.height = value
+        self.__height = value
